@@ -4,7 +4,11 @@ import morgan from 'morgan';
 import connectDB from './config/connectDB.js';
 import userRoutes from './routes/userRoutes.js';
 import cors from 'cors';
-import path from 'path';
+import { fileURLToPath } from 'url';
+import path, { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 dotenv.config();
 
@@ -22,8 +26,9 @@ app.use('/api/v1/user', userRoutes)
 
 //static files
 app.use(express.static(path.join(__dirname, "./client/build")));
+
 app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 //Port
