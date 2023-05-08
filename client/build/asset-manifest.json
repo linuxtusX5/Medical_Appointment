@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b54ae15.css",
+    "main.js": "/static/js/main.3057dede.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/bigstock-Home-health-care-worker-and-an-13926641.jpg": "/static/media/bigstock-Home-health-care-worker-and-an-13926641.3611cfac28baf86c0968.jpg",
+    "static/media/2020_MedicalLabSciences_001.jpg": "/static/media/2020_MedicalLabSciences_001.7f1ff7cb011681b326d1.jpg",
+    "static/media/undraw_doctor_kw5l.png": "/static/media/undraw_doctor_kw5l.a0cc1cdef867a6b4f940.png",
+    "static/media/undraw_medicine_b1ol.png": "/static/media/undraw_medicine_b1ol.de9c6541bbbe1d76b9a8.png",
+    "static/media/health-care-doctor-monitor.jpg": "/static/media/health-care-doctor-monitor.90893435d2a0ba788afb.jpg",
+    "static/media/undraw_medical_care_movn.png": "/static/media/undraw_medical_care_movn.c9378192a6d6c2e68787.png",
+    "static/media/undraw_Scientist_ft0o.png": "/static/media/undraw_Scientist_ft0o.c0a87e41f71c194fac33.png",
+    "index.html": "/index.html",
+    "main.7b54ae15.css.map": "/static/css/main.7b54ae15.css.map",
+    "main.3057dede.js.map": "/static/js/main.3057dede.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b54ae15.css",
+    "static/js/main.3057dede.js"
+  ]
+}

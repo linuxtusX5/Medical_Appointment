@@ -1,0 +1,32 @@
+import express from 'express';
+import dotenv from 'dotenv';
+import morgan from 'morgan';
+import connectDB from './config/connectDB.js';
+import userRoutes from './routes/userRoutes.js';
+import cors from 'cors';
+
+dotenv.config();
+
+connectDB();
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+app.use(morgan("dev"));
+
+
+//routes
+app.use('/api/v1/user', userRoutes)
+
+//static files
+app.use(express.static(path.join(__dirname, "./client/build")));
+app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+});
+
+//Port
+const port = process.env.PORT || 1337;
+app.listen(port, () => {
+    console.log(`Server Running in ${process.env.DEV_MODE} Mode on Port ${process.env.PORT}`)
+})
